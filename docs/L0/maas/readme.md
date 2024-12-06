@@ -351,8 +351,8 @@ cd /workspaces/codespaces-jupyter
 #intern_study_L0_4就是model_name
 huggingface-cli repo create intern_study_L0_4
 
-# 克隆到本地 your_github_name 注意替换成你自己的
-git clone https://huggingface.co/{your_github_name}/intern_study_L0_4
+# 克隆到本地 your_huggingface_name 注意替换成你自己的
+git clone https://huggingface.co/{your_huggingface_name}/intern_study_L0_4
 ```
 
 克隆好之后，刷新文件目录可以看到克隆好的`intern_study_L0_4`文件夹。
@@ -508,7 +508,7 @@ git clone https://modelers.cn/Intern/internlm2_5-1_8b-chat.git
 ```python
 # 确保按指南安装好openmind后
 from openmind import AutoModel
-model = AutoModel.from_pretrained("Intern/internlm2_5-1_8b-chat", trust_remote_code=True")
+model = AutoModel.from_pretrained("Intern/internlm2_5-1_8b-chat", trust_remote_code="True")
 ```
 
 >openMind Library是一个深度学习开发套件，通过简单易用的API支持模型预训练、微调、推理等流程。
